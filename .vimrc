@@ -1,6 +1,9 @@
 execute pathogen#infect()
 
-syntax enable " Enable syntax highlighting
+" Enable syntax highlighting
+if !exists("g:syntax_on")
+        syntax enable
+endif
 filetype plugin indent on " Allow plugins (?)
 colorscheme molokai " colorscheme
 
@@ -38,5 +41,3 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2

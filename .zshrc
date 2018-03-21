@@ -60,6 +60,8 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  tmux
+  brew
 )
 
 source $ZSH/oh-my-zsh.sh
