@@ -6,6 +6,7 @@ if !exists("g:syntax_on")
 endif
 filetype plugin indent on " Allow plugins (?)
 colorscheme molokai " colorscheme
+set nocompatible
 
 set backspace=indent,eol,start " Backspace over indents and EOL
 set tabstop=4 " Number of visual spaces per tab
@@ -29,15 +30,11 @@ set foldlevelstart=10 " open most folds by default
 set foldnestmax=10 " 10 nested fold maximum
 set foldmethod=indent " fold based on indent level
 
+" indenting
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
 " Airline / Statusline
 let g:airline_powerline_fonts = 1 " Allow powerline fonts
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" vimwiki
+let g:vimwiki_list = [{'path':'~/vimwiki', 'syntax':'markdown','ext':'.md'}]

@@ -13,3 +13,6 @@
 [submodule "hosts"]
 	path = hosts
 	url = https://github.com/StevenBlack/hosts.git
+[submodule ".vim/bundle/vimwiki"]
+	path = .vim/bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki
