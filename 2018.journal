@@ -1,0 +1,108 @@
+
+2018/06/01 set initial assets:checking balance
+    assets:ally:checking                $6884.84
+    equity:opening balances       $-6884.84
+
+2018/06/01 set initial assets:savings balance
+    assets:ally:savings                $23927.11
+    equity:opening balances      $-23927.11
+
+2018/06/01 set initial assets:venmo balance
+    assets:venmo                    $908.10
+    equity:opening balances        $-908.10
+
+2018/06/01 set initial expenses balance
+    liability:chase:sapphire        $-219.73
+    equity:opening balances         $219.73
+
+2018/06/01 biweekly paycheck
+    assets:ally:checking            $2,251.89
+    income:cisco:salary       $-2,251.89
+
+2018/06/01 biweekly transfer
+    assets:ally:savings              $750
+    assets:ally:checking            $-750
+
+2018/06/04 Comcast bill
+    expenses:cahill:internet           $39.99
+    assets:ally:checking              -$39.99
+
+2018/06/04 Comcast reimbursement
+    assets:ally:checking            $39.99
+    income:cisco:expenses          -$39.99
+
+2018/06/04 rent payment
+    expenses:cahill:rent         $885.00
+    assets:ally:checking        $-885.00
+
+2018/06/05 Checking interest
+    assets:ally:checking            $0.65
+    income:ally:interest           -$0.65
+
+2018/06/06 PGE Utilities
+    expenses:cahill:utilities         $103.30
+    assets:ally:checking             $-103.30
+
+2018/06/01 AMEX express payment
+    expenses:misc                 $15.00
+    assets:ally:checking         $-15.00
+
+2018/06/05 savings interest
+    assets:ally:savings           $31.74
+    income:ally:interest         $-31.74
+
+2018/06/01 Transistor
+    expenses:entertainment:steam          $19.99
+    liability:chase:sapphire             $-19.99
+
+2018/06/01 Peacock Food Truck
+    expenses:food:restaurants           $7.92
+    liability:chase:sapphire           $-7.92
+
+2018/06/02 Amazon Prime Yearly
+    expenses:misc                    $130.01
+    liability:chase:sapphire        $-130.01
+
+2018/06/03 CVS
+    expenses:misc                      $9.60
+    liability:chase:sapphire          $-9.60
+
+2018/06/03 Angele Restaurant Napa
+    expenses:food:restaurants          $48.00
+    liability:chase:sapphire          $-48.00
+
+2018/06/03 La Dolce Velo
+    expenses:misc:sporting            $17.48
+    liability:chase:sapphire         $-17.48
+
+2018/06/03 Whole Foods
+    expenses:food:groceries           $69.22
+    liability:chase:sapphire         $-69.22
+
+2018/06/03 Amazon Serenity
+    expenses:entertainment:movies           $3.99
+    liability:chase:sapphire               $-3.99
+
+2018/06/01 rent payment
+    expenses:cahill:rent        $1080.00
+    assets:venmo               $-1080.00
+
+2018/06/01 rent payment
+    assets:venmo                 $855.00
+    expenses:cahill:rent        $-855.00
+
+2018/06/04 parking pass
+    expenses:misc          $41.50
+    assets:venmo          $-41.50
+
+2018/06/07 utilities from brody
+    assets:venmo                       $25.82
+    expenses:cahill:utilities         $-25.82
+
+2018/06/06 utilities from logan
+    assets:venmo                       $25.82
+    expenses:cahill:utilities         $-25.82
+
+2018/06/05 utilities from leah
+    assets:venmo                       $25.82
+    expenses:cahill:utilities         $-25.82
