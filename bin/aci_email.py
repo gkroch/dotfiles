@@ -9,12 +9,12 @@ def write_to_clipboard(output):
     process.communicate(output.encode('utf-8'))
 
 if __name__ == "__main__":
-    if len(sys.argv) < 1:
-        print("Come on, maaan")
+    if len(sys.argv) < 2:
+        print("Please enter a valid case number")
         exit(1)
 
     cust_name = input("Customer name?\n> ")
-    SR_num = input("SR_number?\n> ")
+    SR_num = sys.argv[1]
     description = input("Provide description?\n> ")
     
     email_string = ("Hey %s,\n\n"

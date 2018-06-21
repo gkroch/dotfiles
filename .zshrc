@@ -107,5 +107,14 @@ export PATH="/usr/local/opt/libarchive/bin:$PATH"
 export PATH="/Users/gkroch/.local/bin/:$PATH"
 export PATH="/Users/gkroch/.cargo/bin:$PATH"
 export EDITOR="vim"
-export PAGER="most"
+export PAGER="less"
 export LEDGER_FILE="/Users/gkroch/.dotfiles/2018.journal"
+
+cn() {
+        if [ "$#" -ne 1 ]; then
+                echo "Enter a valid case number"
+        else
+                aci_email.py "$1"
+                (echo -e "SR $1 ($(date +'%Y-%m-%d'))" && cat "$HOME/Documents/Cisco/ACI/CaseNotes/template.mkd") > "$HOME/Documents/Cisco/ACI/CaseNotes/$1.mkd"
+        fi
+}
