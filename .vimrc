@@ -5,7 +5,8 @@ if !exists("g:syntax_on")
         syntax enable
 endif
 filetype plugin indent on " Allow plugins (?)
-colorscheme molokai " colorscheme
+"colorscheme molokai " colorscheme
+colo seoul256
 set nocompatible
 
 set backspace=indent,eol,start " Backspace over indents and EOL
