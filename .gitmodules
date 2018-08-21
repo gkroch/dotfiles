@@ -22,3 +22,9 @@
 [submodule ".vim/bundle/seoul256.vim"]
 	path = .vim/bundle/seoul256.vim
 	url = https://github.com/junegunn/seoul256.vim
+[submodule ".vim/bundle/goyo.vim"]
+	path = .vim/bundle/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
+[submodule ".vim/bundle/verilog_systemverilog.vim"]
+	path = .vim/bundle/verilog_systemverilog.vim
+	url = https://github.com/vhda/verilog_systemverilog.vim
