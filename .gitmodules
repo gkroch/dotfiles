@@ -13,9 +13,6 @@
 [submodule "hosts"]
 	path = hosts
 	url = https://github.com/StevenBlack/hosts.git
-[submodule ".vim/bundle/vimwiki"]
-	path = .vim/bundle/vimwiki
-	url = https://github.com/vimwiki/vimwiki
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
@@ -28,3 +25,6 @@
 [submodule ".vim/bundle/verilog_systemverilog.vim"]
 	path = .vim/bundle/verilog_systemverilog.vim
 	url = https://github.com/vhda/verilog_systemverilog.vim
+[submodule ".vim/bundle/fzf"]
+	path = .vim/bundle/fzf
+	url = https://github.com/junegunn/fzf

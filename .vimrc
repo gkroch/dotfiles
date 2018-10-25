@@ -32,6 +32,8 @@ set foldlevelstart=10 " keep folds closed by default
 set foldnestmax=10 " 10 nested fold maximum
 set foldmethod=indent " fold based on indent level
 
+highlight Comment cterm=italic
+
 " indenting
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
@@ -39,6 +41,10 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 let g:airline_powerline_fonts = 1 " Allow powerline fonts
 
 " Vim-markdown
+set conceallevel=2
 let g:vim_markdown_folding_style_pythonic = 1
 let g:vim_markdown_new_list_item_indent = 2
 let g:vim_markdown_autowrite = 1
+
+" fzf (installed via Homebrew)
+set rtp+=/usr/local/opt/fzf

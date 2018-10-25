@@ -1,108 +1,609 @@
+; journal created 2018-09-24 by hledger
 
-2018/06/01 set initial assets:checking balance
-    assets:ally:checking                $6884.84
-    equity:opening balances       $-6884.84
+2018/09/01 set initial assets:ally:checking balance
+    assets:ally:checking            $8343.16
+    equity:opening balances        $-8343.16
 
-2018/06/01 set initial assets:savings balance
-    assets:ally:savings                $23927.11
-    equity:opening balances      $-23927.11
+2018/09/01 set initial assets:ally:savings
+    assets:ally:savings           $39047.87
+    equity:opening balances      $-39047.87
 
-2018/06/01 set initial assets:venmo balance
-    assets:venmo                    $908.10
-    equity:opening balances        $-908.10
+2018/09/01 set initial liability:chase:sapphire balance
+    liability:chase:sapphire        $-411.85
+    equity:opening balances          $411.85
 
-2018/06/01 set initial expenses balance
-    liability:chase:sapphire        $-219.73
-    equity:opening balances         $219.73
+2018/09/05 savings interest
+    assets:ally:savings           $57.57
+    income:ally:interest         $-57.57
 
-2018/06/01 biweekly paycheck
-    assets:ally:checking            $2,251.89
-    income:cisco:salary       $-2,251.89
+2018/09/07 biweekly transfer
+    assets:ally:savings            $1000
+    assets:ally:checking          $-1000
 
-2018/06/01 biweekly transfer
-    assets:ally:savings              $750
-    assets:ally:checking            $-750
+2018/09/21 biweekly transfer
+    assets:ally:savings            $1000
+    assets:ally:checking          $-1000
 
-2018/06/04 Comcast bill
-    expenses:cahill:internet           $39.99
-    assets:ally:checking              -$39.99
+2018/09/01 rent payment
+    expenses:cahill:rent           $3800
+    assets:ally:checking          $-3800
 
-2018/06/04 Comcast reimbursement
-    assets:ally:checking            $39.99
-    income:cisco:expenses          -$39.99
+2018/09/01 set initial assets:venmo balance
+    assets:venmo                      $7
+    equity:opening balances          $-7
 
-2018/06/04 rent payment
-    expenses:cahill:rent         $885.00
-    assets:ally:checking        $-885.00
+2018/09/01 rent from Chetan
+    assets:venmo                   $1050
+    expenses:cahill:rent          $-1050
 
-2018/06/05 Checking interest
-    assets:ally:checking            $0.65
-    income:ally:interest           -$0.65
+2018/09/01 rent from Mazen
+    assets:venmo                   $1150
+    expenses:cahill:rent          $-1150
 
-2018/06/06 PGE Utilities
-    expenses:cahill:utilities         $103.30
-    assets:ally:checking             $-103.30
+2018/09/01 rent from Wicaksa
+    assets:venmo                    $850
+    expenses:cahill:rent           $-850
 
-2018/06/01 AMEX express payment
-    expenses:misc                 $15.00
-    assets:ally:checking         $-15.00
+2018/09/01 venmo transfer fee
+    expenses:banking:fees           $0.25
+    assets:venmo                   $-0.25
 
-2018/06/05 savings interest
-    assets:ally:savings           $31.74
-    income:ally:interest         $-31.74
+2018/09/01 venmo transfer to checking
+    assets:ally:checking        $2206.75
+    assets:venmo               $-2206.75
 
-2018/06/01 Transistor
-    expenses:entertainment:steam          $19.99
-    liability:chase:sapphire             $-19.99
+2018/09/05 PGE Utilities
+    expenses:cahill:utilities         $196.26
+    assets:ally:checking             $-196.26
 
-2018/06/01 Peacock Food Truck
-    expenses:food:restaurants           $7.92
-    liability:chase:sapphire           $-7.92
+2018/09/05 AMEX Payment
+    expenses:banking:fees           $6.55
+    assets:ally:checking           $-6.55
 
-2018/06/02 Amazon Prime Yearly
-    expenses:misc                    $130.01
-    liability:chase:sapphire        $-130.01
+2018/09/05 checking interest
+    assets:ally:checking           $0.59
+    income:ally:interest          $-0.59
 
-2018/06/03 CVS
-    expenses:misc                      $9.60
-    liability:chase:sapphire          $-9.60
+2018/09/06 Comcast bill
+    expenses:cahill:internet         $111.95
+    assets:ally:checking            $-111.95
 
-2018/06/03 Angele Restaurant Napa
-    expenses:food:restaurants          $48.00
-    liability:chase:sapphire          $-48.00
+2018/09/07 biweekly paycheck
+    assets:ally:checking        $2135.57
+    income:cisco:salary        $-2135.57
 
-2018/06/03 La Dolce Velo
-    expenses:misc:sporting            $17.48
-    liability:chase:sapphire         $-17.48
+2018/09/20 atm withdrawal
+    expenses:cash                    $23
+    assets:ally:checking            $-23
 
-2018/06/03 Whole Foods
-    expenses:food:groceries           $69.22
-    liability:chase:sapphire         $-69.22
+2018/09/21 biweekly paycheck
+    assets:ally:checking        $2135.55
+    income:cisco:salary        $-2135.55
 
-2018/06/03 Amazon Serenity
-    expenses:entertainment:movies           $3.99
-    liability:chase:sapphire               $-3.99
+2018/09/04 utilities from Mazen
+    assets:venmo                       $49.06
+    expenses:cahill:utilities         $-49.06
 
-2018/06/01 rent payment
-    expenses:cahill:rent        $1080.00
-    assets:venmo               $-1080.00
+2018/09/04 utilities from Wicaksa
+    assets:venmo                       $49.06
+    expenses:cahill:utilities         $-49.06
 
-2018/06/01 rent payment
-    assets:venmo                 $855.00
-    expenses:cahill:rent        $-855.00
+2018/09/04 utilities from Chetan
+    assets:venmo                       $49.06
+    expenses:cahill:utilities         $-49.06
 
-2018/06/04 parking pass
-    expenses:misc          $41.50
-    assets:venmo          $-41.50
+2018/09/01 cardamom chai
+    expenses:food:groceries           $7.00
+    assets:venmo                     $-7.00
 
-2018/06/07 utilities from brody
-    assets:venmo                       $25.82
-    expenses:cahill:utilities         $-25.82
+2018/09/06 restaurant reimbursement
+    assets:venmo                       $26.00
+    expenses:food:restaurants         $-26.00
 
-2018/06/06 utilities from logan
-    assets:venmo                       $25.82
-    expenses:cahill:utilities         $-25.82
+2018/09/09 tacos with Maria
+    expenses:food:restaurants          $15.79
+    assets:venmo                      $-15.79
 
-2018/06/05 utilities from leah
-    assets:venmo                       $25.82
-    expenses:cahill:utilities         $-25.82
+2018/09/14 T-mobile august from Brody
+    assets:venmo                     $55.00
+    equity:opening balances         $-55.00
+
+2018/09/14 comcast from Chetan
+    assets:venmo                      $56.00
+    expenses:cahill:internet         $-56.00
+
+2018/09/14 comcast from Mazen
+    assets:venmo                      $56.00
+    expenses:cahill:internet         $-56.00
+
+2018/09/22 restaurant reimbursement
+    assets:venmo                        $4.50
+    expenses:food:restaurants          $-4.50
+
+2018/09/22 restaurant reimbursement
+    assets:venmo                        $4.00
+    expenses:food:restaurants          $-4.00
+
+2018/09/22 restaurant reimbursement
+    assets:venmo                        $8.00
+    expenses:food:restaurants          $-8.00
+
+2018/09/22 drinks with Kirby
+    expenses:food:bars          $10.00
+    assets:venmo               $-10.00
+
+2018/09/03 uber cincinnati
+    expenses:transportation:uber           $16.26
+    liability:chase:sapphire              $-16.26
+
+2018/09/03 uber cincinnati
+    expenses:transportation:uber          $12.82
+    liability:chase:sapphire             $-12.82
+
+2018/09/02 udf cincinnati
+    expenses:food:restaurants           $3.29
+    liability:chase:sapphire           $-3.29
+
+2018/09/01 studio San Jose
+    expenses:fitness:gym              $81.00
+    liability:chase:sapphire         $-81.00
+
+2018/09/03 cocktails at Sundry and Vice
+    expenses:food:bars                $46.50
+    liability:chase:sapphire         $-46.50
+
+2018/09/03 kroger
+    expenses:food:groceries           $25.39
+    liability:chase:sapphire         $-25.39
+
+2018/09/02 metropole cincinnati
+    expenses:food:restaurants          $50.00
+    liability:chase:sapphire          $-50.00
+
+2018/09/02 the rook cincinnati
+    expenses:food:bars                $15.34
+    liability:chase:sapphire         $-15.34
+
+2018/09/04 uber
+    expenses:transportation:uber          $10.96
+    liability:chase:sapphire             $-10.96
+
+2018/09/04 lunch at work
+    expenses:food:restaurants          $11.58
+    liability:chase:sapphire          $-11.58
+
+2018/09/05 whole foods
+    expenses:food:groceries           $39.88
+    liability:chase:sapphire         $-39.88
+
+2018/09/06 clipper card
+    expenses:transportation:public          $20.00
+    liability:chase:sapphire               $-20.00
+
+2018/09/06 oren's hummus
+    expenses:food:restaurants          $52.36
+    liability:chase:sapphire          $-52.36
+
+2018/09/07 whole foods
+    expenses:food:groceries           $43.95
+    liability:chase:sapphire         $-43.95
+
+2018/09/07 cafe rosalena
+    expenses:food:restaurants          $10.63
+    liability:chase:sapphire          $-10.63
+
+2018/09/07 amazon climbing gear
+    expenses:shopping:misc            $63.48
+    liability:chase:sapphire         $-63.48
+
+2018/09/07 gap clothes
+    expenses:shopping:clothing          $51.82
+    liability:chase:sapphire           $-51.82
+
+2018/09/09 whole foods
+    expenses:food:groceries           $16.91
+    liability:chase:sapphire         $-16.91
+
+2018/09/09 clipper card
+    expenses:transportation:public          $20.00
+    liability:chase:sapphire               $-20.00
+
+2018/09/09 uber
+    expenses:transportation:uber           $4.15
+    liability:chase:sapphire              $-4.15
+
+2018/09/09 amazon movie
+    expenses:entertainment:movies           $5.99
+    liability:chase:sapphire               $-5.99
+
+2018/09/10 whole foods
+    expenses:food:groceries            $8.48
+    liability:chase:sapphire          $-8.48
+
+2018/09/10 gap clothes
+    expenses:shopping:clothing          $96.60
+    liability:chase:sapphire           $-96.60
+
+2018/09/10 lunch at work
+    expenses:food:restaurants           $2.29
+    liability:chase:sapphire           $-2.29
+
+2018/09/11 whole foods
+    expenses:food:groceries           $15.23
+    liability:chase:sapphire         $-15.23
+
+2018/09/11 nike shoes
+    expenses:shopping:clothing          $54.63
+    liability:chase:sapphire           $-54.63
+
+2018/09/15 clipper card
+    expenses:transportation:public          $28.25
+    liability:chase:sapphire               $-28.25
+
+2018/09/15 amazon books
+    expenses:entertainment:books          $24.98
+    liability:chase:sapphire             $-24.98
+
+2018/09/15 fedex
+    expenses:misc                      $7.65
+    liability:chase:sapphire          $-7.65
+
+2018/09/16 uber
+    expenses:transportation:uber          $29.60
+    liability:chase:sapphire             $-29.60
+
+2018/09/17 med deli
+    expenses:food:restaurants          $56.62
+    liability:chase:sapphire          $-56.62
+
+2018/09/17 coffee
+    expenses:food:restaurants           $4.00
+    liability:chase:sapphire           $-4.00
+
+2018/09/18 coffee
+    expenses:food:restaurants           $6.00
+    liability:chase:sapphire           $-6.00
+
+2018/09/20 bull city burger
+    expenses:food:restaurants          $28.49
+    liability:chase:sapphire          $-28.49
+
+2018/09/20 twinnies
+    expenses:food:restaurants           $7.47
+    liability:chase:sapphire           $-7.47
+
+2018/09/20 red mango
+    expenses:food:restaurants           $6.93
+    liability:chase:sapphire           $-6.93
+
+2018/09/20 lobby shop
+    expenses:food:restaurants           $2.95
+    liability:chase:sapphire           $-2.95
+
+2018/09/21 uber
+    expenses:transportation:uber           $6.00
+    liability:chase:sapphire              $-6.00
+
+2018/09/21 parlour
+    expenses:food:restaurants           $9.50
+    liability:chase:sapphire           $-9.50
+
+2018/09/21 T-Mobile bill
+    expenses:cahill:phone            $189.17
+    liability:chase:sapphire        $-189.17
+
+2018/09/21 twinnies
+    expenses:food:restaurants           $1.99
+    liability:chase:sapphire           $-1.99
+
+2018/09/21 la vaquita
+    expenses:food:restaurants           $7.54
+    liability:chase:sapphire           $-7.54
+
+2018/09/22 alumni event
+    expenses:food:bars                   $10
+    liability:chase:sapphire            $-10
+
+2018/09/22 monuts
+    expenses:food:restaurants          $17.15
+    liability:chase:sapphire          $-17.15
+
+2018/09/22 nasher
+    expenses:food:restaurants          $58.69
+    liability:chase:sapphire          $-58.69
+
+2018/09/22 clouds brewing
+    expenses:food:bars                $15.44
+    liability:chase:sapphire         $-15.44
+
+2018/09/22 luna rotisserie
+    expenses:food:restaurants          $14.63
+    liability:chase:sapphire          $-14.63
+
+2018/09/22 fullsteam
+    expenses:food:bars                $25.00
+    liability:chase:sapphire         $-25.00
+
+2018/09/23 foster's
+    expenses:food:restaurants           $9.14
+    liability:chase:sapphire           $-9.14
+
+2018/09/23 atomic fern
+    expenses:food:bars                $11.50
+    liability:chase:sapphire         $-11.50
+
+2018/09/24 whole foods
+    expenses:food:groceries           $71.86
+    liability:chase:sapphire         $-71.86
+
+2018/09/24 card payment
+    liability:chase:sapphire        $1635.68
+    assets:ally:checking           $-1635.68
+
+2018/09/25 t-mobile from Austin
+    assets:venmo                   $40.00
+    expenses:cahill:phone         $-40.00
+
+2018/09/25 flight to cincinnati
+    expenses:travel:flights          $126.40
+    liability:chase:sapphire        $-126.40
+
+2018/09/28 cisco bonus
+    assets:ally:checking        $1688.70
+    income:cisco:salary        $-1688.70
+
+2018/09/28 savings transfer
+    assets:ally:savings            $1000
+    assets:ally:checking          $-1000
+
+2018/09/27 tofu with adi
+    expenses:food:restaurants             $41
+    liability:chase:sapphire             $-41
+
+2018/09/27 virgin america food
+    expenses:food:groceries               $6
+    liability:chase:sapphire             $-6
+
+2018/10/01 october rent from Wicaksa
+    assets:venmo                    $850
+    expenses:cahill:rent           $-850
+
+2018/10/01 venmo transfer fee
+    expenses:banking:fees           $0.25
+    assets:venmo                   $-0.25
+
+2018/10/01 venmo transfer to checking
+    assets:ally:checking        $2063.64
+    assets:venmo               $-2063.64
+
+2018/10/01 october rent from chetan
+    assets:venmo                   $1050
+    expenses:cahill:rent          $-1050
+
+2018/10/01 october rent
+    expenses:cahill:rent           $3800
+    assets:ally:checking          $-3800
+
+2018/10/01 october rent from Mazen
+    assets:venmo                   $1150
+    expenses:cahill:rent          $-1150
+
+2018/09/28 nytimes subscription
+    expenses:entertainment:books          $16.99
+    liability:chase:sapphire             $-16.99
+
+2018/09/28 whole foods
+    expenses:food:groceries           $21.82
+    liability:chase:sapphire         $-21.82
+
+2018/09/29 amazon purchases
+    expenses:shopping:misc            $78.56
+    liability:chase:sapphire         $-78.56
+
+2018/09/30 iso beers
+    expenses:food:bars                 $8.05
+    liability:chase:sapphire          $-8.05
+
+2018/09/30 uber
+    expenses:transportation:uber           $5.03
+    liability:chase:sapphire              $-5.03
+
+2018/09/30 whole foods
+    expenses:food:groceries           $61.83
+    liability:chase:sapphire         $-61.83
+
+2018/10/01 studio rock climbing
+    expenses:fitness:gym              $81.00
+    liability:chase:sapphire         $-81.00
+
+2018/09/30 prime video
+    expenses:entertainment:movies           $5.99
+    liability:chase:sapphire               $-5.99
+
+2018/10/01 venmo cashout
+    assets:ally:checking        $2200.00
+    assets:venmo               $-2200.00
+
+2018/10/01 Chase membership fee
+    expenses:banking:fees                $95
+    liability:chase:sapphire            $-95
+
+2018/10/03 wikipedia donation
+    expenses:donations                $10.00
+    liability:chase:sapphire         $-10.00
+
+2018/10/04 uber
+    expenses:transportation:uber           $8.50
+    liability:chase:sapphire              $-8.50
+
+2018/10/04 kroger
+    expenses:food:groceries           $40.80
+    liability:chase:sapphire         $-40.80
+
+2018/10/05 cincy rec center
+    expenses:fitness:gym              $10.00
+    liability:chase:sapphire         $-10.00
+
+2018/10/05 bauer farm kitchen
+    expenses:food:restaurants            $125
+    liability:chase:sapphire            $-125
+
+2018/10/06 kroger
+    expenses:food:groceries           $23.74
+    liability:chase:sapphire         $-23.74
+
+2018/10/02 dinner at luna
+    expenses:food:restaurants          $40.00
+    assets:ally:checking              $-40.00
+
+2018/10/05 cisco salary
+    assets:ally:checking        $2135.55
+    income:cisco:salary        $-2135.55
+
+2018/10/05 biweekly transfer
+    assets:ally:savings            $1000
+    assets:ally:checking          $-1000
+
+2018/10/05 atm reimbursement
+    assets:ally:checking           $3.00
+    expenses:cash                 $-3.00
+
+2018/10/05 checking interest
+    assets:ally:checking           $0.63
+    income:ally:interest          $-0.63
+
+2018/10/05 savings interest
+    assets:ally:savings           $61.68
+    income:ally:interest         $-61.68
+
+2018/10/09 fantasy basketball
+    expenses:misc                    $20
+    assets:ally:checking            $-20
+
+2018/10/09 PGE utilities
+    expenses:cahill:utilities          $73.98
+    assets:ally:checking              $-73.98
+
+2018/10/09 comcast internet
+    expenses:cahill:internet         $111.95
+    assets:ally:checking            $-111.95
+
+2018/10/10 chase credit card payment
+    liability:chase:sapphire         $971.97
+    assets:ally:checking            $-971.97
+
+2018/10/08 streetside brewing
+    expenses:food:bars                $30.00
+    liability:chase:sapphire         $-30.00
+
+2018/10/08 udf ice cream
+    expenses:food:restaurants           $7.28
+    liability:chase:sapphire           $-7.28
+
+2018/10/09 uber
+    expenses:transportation:uber          $17.95
+    liability:chase:sapphire             $-17.95
+
+2018/10/09 airport food
+    expenses:food:groceries            $5.28
+    liability:chase:sapphire          $-5.28
+
+2018/10/09 whole foods
+    expenses:food:groceries           $56.27
+    liability:chase:sapphire         $-56.27
+
+2018/10/09 airport food
+    expenses:food:groceries            $4.08
+    liability:chase:sapphire          $-4.08
+
+2018/10/09 united flight
+    expenses:travel:flights          $541.80
+    liability:chase:sapphire        $-541.80
+
+2018/10/06 utilities from Chetan
+    assets:venmo                       $18.49
+    expenses:cahill:utilities         $-18.49
+
+2018/10/06 utilities from Mazen
+    assets:venmo                       $18.49
+    expenses:cahill:utilities         $-18.49
+
+2018/10/06 utilities from Wickasa
+    assets:venmo                       $18.49
+    expenses:cahill:utilities         $-18.49
+
+2018/10/06 internet from Chetan
+    assets:venmo                         $56
+    expenses:cahill:internet            $-56
+
+2018/10/06 internet from Mazen
+    assets:venmo                         $56
+    expenses:cahill:internet            $-56
+
+2018/10/08 dnd mug for Andrew
+    expenses:shopping:misc          $11.25
+    assets:venmo                   $-11.25
+
+2018/10/19 cisco salary
+    assets:ally:checking        $2135.56
+    income:cisco:salary        $-2135.56
+
+2018/10/19 transfer to savings
+    assets:ally:savings            $1000
+    assets:ally:checking          $-1000
+
+2018/10/12 whole foods
+    expenses:food:groceries           $15.36
+    liability:chase:sapphire         $-15.36
+
+2018/10/12 food on flight
+    expenses:food:groceries               $8
+    liability:chase:sapphire             $-8
+
+2018/10/13 big basin cafe
+    expenses:food:restaurants          $17.40
+    liability:chase:sapphire          $-17.40
+
+2018/10/14 uber
+    expenses:transportation:uber           $6.36
+    liability:chase:sapphire              $-6.36
+
+2018/10/14 uber
+    expenses:transportation:uber           $6.80
+    liability:chase:sapphire              $-6.80
+
+2018/10/14 uber
+    expenses:transportation:uber           $6.79
+    liability:chase:sapphire              $-6.79
+
+2018/10/14 whole foods
+    expenses:food:groceries           $25.91
+    liability:chase:sapphire         $-25.91
+
+2018/10/15 bogart's bar
+    expenses:food:bars                $19.00
+    liability:chase:sapphire         $-19.00
+
+2018/10/13 4th street pizza bar
+    expenses:food:bars                $11.50
+    liability:chase:sapphire         $-11.50
+
+2018/10/15 uber
+    expenses:transportation:uber           $6.39
+    liability:chase:sapphire              $-6.39
+
+2018/10/15 flight to portland
+    expenses:travel:flights          $225.40
+    liability:chase:sapphire        $-225.40
+
+2018/10/17 whole foods
+    expenses:food:groceries           $22.05
+    liability:chase:sapphire         $-22.05
+
+2018/10/15 t-mobile from brody
+    assets:venmo                   $55.00
+    expenses:cahill:phone         $-55.00
+
+2018/10/15 lamp
+    expenses:shopping:misc              $7
+    assets:venmo                       $-7
